@@ -1,0 +1,125 @@
+### 1: Hemiplegia / paraplegia ###
+<<372310001 |Paralysis due to lesion of spinal cord (disorder)|
+OR
+<<192970008 |Cauda equina syndrome (disorder)|
+OR
+(<<29426003 |Paralytic syndrome (disorder)|:(
+	([0..0] 363698007 |Finding site (attribute)| = (
+		<<49549006 |Structure of visual system (body structure)|
+		OR <<89837001 |Urinary bladder structure (body structure)|
+		OR <<25238003 |Cranial nerve structure (body structure)|))
+	AND [0..0] 371881003 |During (attribute)| = 236973005 |Delivery procedure (procedure)|
+	AND [0..0] 246454002 |Occurrence (attribute)| = 255407002 |Neonatal (qualifier value)|))
+
+
+### 2: Peripheral vascular disease ###
+
+
+### 3: Metastatic solid tumour ###
+<<14799000 |Neoplasm, metastatic (morphologic abnormality)|
+OR
+(<<404684003 |Clinical finding (finding)|:116676008 |Associated morphology (attribute)| = <<14799000 |Neoplasm, metastatic (morphologic abnormality)|)
+
+
+### 4: Dementia ###
+<< 52448006 |Dementia (disorder)|
+
+
+## 5: Renal disease ###
+(<<90708001 |Kidney disease (disorder)| MINUS <<79131000119100 |Kidney lesion (disorder)|)
+OR
+(<<71388002 |Procedure (procedure)|: 363702006 |Has focus (attribute)| = <<90708001 |Kidney disease (disorder)|)
+OR
+<<175905003 |Total nephrectomy (procedure)|
+
+
+### 6: Myocardial infarction ###
+<<22298006 |Myocardial infarction (disorder)|
+OR
+<<413439005 |Acute ischemic heart disease (disorder)|
+
+
+### 7: Malignancy, except skin neoplasms ###
+<<363346000 |Malignant neoplastic disease (disorder)|:
+([0..0] 363698007 |Finding site (attribute)| = <<39937001 |Skin structure (body structure)|
+AND
+[0..0] 116676008 |Associated morphology (attribute)| = << 14799000 |Neoplasm, metastatic (morphologic abnormality)|)
+
+
+### 8: Chronic pulmonary disease ###
+<< 17097001 |Chronic disease of respiratory system|
+OR
+<< 24417004 |Environmental lung disease (disorder)|
+OR
+<< 59282003 |Pulmonary embolism (disorder)|
+OR
+<< 195967001 |Asthma (disorder)|
+
+
+## 9: Mild liver disease ##
+(<<235856003 |Disorder of liver (disorder)|
+OR
+<<13920009 |Hepatic encephalopathy (disorder)|
+OR
+<<75183008 |Abnormal liver function (finding)|
+OR
+82403002 |Cholangitis (disorder)|)
+MINUS
+(<<59927004 |Hepatic failure (disorder)|
+OR
+<<93870000 |Malignant neoplasm of liver (disorder)|)
+
+
+
+### 10: AIDS / HIV ###
+<< 19030005 |Human immunodeficiency virus (organism)|
+OR
+(<< 404684003 |Clinical finding (finding)|: 246075003 |Causative agent (attribute)| = << 19030005 |Human immunodeficiency virus (organism)|)
+
+
+### 11: Congestive heart failure ###
+<<84114007 |Heart failure (disorder)|
+OR
+(<<71388002 |Procedure (procedure)|:
+	405813007 |Procedure site - Direct (attribute)| = <<41801008 |Coronary artery structure (body structure)|,
+	260686004 |Method (attribute)| = <<257903006 |Repair - action (qualifier value)|)
+
+
+### 12: Peptic ulcer disease ###
+<<13200003 |Peptic ulcer (disorder)|
+OR
+54051005 |Cascade stomach (disorder)|
+
+
+### 13: Cerebrovascular disease ###
+<<62914000 |Cerebrovascular disease (disorder)|
+OR
+(<<404684003 |Clinical finding (finding)|: 255234002 |After (attribute)| = <<62914000 |Cerebrovascular disease (disorder)|)
+OR
+(<<404684003 |Clinical finding (finding)|: 42752001 |Due to (attribute)| = <<62914000 |Cerebrovascular disease (disorder)|)
+OR
+<<1386000 |Intracranial hemorrhage (disorder)|
+OR
+<<66951008 |Carotid endarterectomy (procedure)|
+
+
+## 14: Moderate / severe liver disease ##
+<<59927004 |Hepatic failure (disorder)|
+OR
+<<34742003 |Portal hypertension (disorder)|
+OR
+<<91109007 |Gastric varices (disorder)|
+OR
+<<28670008 |Esophageal varices (disorder)|
+
+
+## 15: Diabetes, with chronic complications ##
+<<404684003 |Clinical finding (finding)|:
+	42752001 |Due to (attribute)| = <<73211009 |Diabetes mellitus (disorder)|
+
+
+### 16: Diabetes, without chronic complications ###
+<<73211009 |Diabetes mellitus (disorder)|
+
+
+### 17: Rheumatic disease ##
