@@ -1,4 +1,4 @@
-#Quick script for converting SNOMED CT snapshot files from the RF2 format to a .cvs that can be loaded into Neo4j
+#Quick script for converting SNOMED CT snapshot files from the RF2 format to a .csv that can be loaded into Neo4j
 
 #Imports
 import re
