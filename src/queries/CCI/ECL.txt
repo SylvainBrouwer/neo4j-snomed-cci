@@ -13,6 +13,81 @@ OR
 
 
 ### 2: Peripheral vascular disease ###
+(
+<<27550009 |Disorder of blood vessel (disorder)|
+MINUS
+(
+	(
+	<<404684003 |Clinical finding (finding)|:
+		116676008 |Associated morphology (attribute)| = 
+			(
+			<<12856003 |Uneven venous ectasia (morphologic abnormality)|
+			OR
+			50960005 |Hemorrhage (morphologic abnormality)|
+			)
+	)
+	OR
+	(
+	<<404684003 |Clinical finding (finding)|:
+		363698007 |Finding site (attribute)| = 
+			(
+			<<299717005 |Structure of carotid and/or cerebral and/or subclavian artery (body structure)|
+			OR
+			<<281232002 |Vascular structure of head and/or neck (body structure)|
+			OR
+			<<846601002 |Structure of blood vessel of thoracic cross-sectional segment of trunk (body structure)|
+			OR
+			15825003 |Aortic structure (body structure)|
+			)
+	)
+)
+)
+OR
+<<63491006 |Intermittent claudication (finding)|
+OR
+(
+(
+<<71388002 |Procedure (procedure)|:
+	{
+	405813007 |Procedure site - Direct (attribute)| =
+		(
+		(
+		<<306954006 |Regional blood vessel structure (body structure)|
+		OR
+		<<51833009 |Peripheral vascular system structure (body structure)|
+		)
+		MINUS
+		(
+		<<299717005 |Structure of carotid and/or cerebral and/or subclavian artery (body structure)|
+		OR
+		<<281232002 |Vascular structure of head and/or neck (body structure)|
+		OR
+		<<846601002 |Structure of blood vessel of thoracic cross-sectional segment of trunk (body structure)|
+		OR
+		15825003 |Aortic structure (body structure)|
+		)
+		),
+	260686004 |Method (attribute)| =
+		<<257903006 |Repair - action (qualifier value)|
+	}
+)
+MINUS
+(
+<<71388002 |Procedure (procedure)|:
+	405813007 |Procedure site - Direct (attribute)| =
+		(
+		<<299717005 |Structure of carotid and/or cerebral and/or subclavian artery (body structure)|
+		OR
+		<<281232002 |Vascular structure of head and/or neck (body structure)|
+		OR
+		<<846601002 |Structure of blood vessel of thoracic cross-sectional segment of trunk (body structure)|
+		OR
+		15825003 |Aortic structure (body structure)|
+		)
+)
+)
+OR
+5431005 |Percutaneous transluminal angioplasty (procedure)|
 
 
 ### 3: Metastatic solid tumour ###
@@ -122,4 +197,29 @@ OR
 <<73211009 |Diabetes mellitus (disorder)|
 
 
-### 17: Rheumatic disease ##
+### 17: Rheumatic disease ###
+(
+<<85828009 |Autoimmune disease (disorder)|:
+	363698007 |Finding site (attribute)| =
+		21793004 |Connective tissue structure (body structure)|
+)
+OR
+(
+<<404684003 |Clinical finding (finding)|:
+	42752001 |Due to (attribute)| = 
+		55464009 |Systemic lupus erythematosus (disorder)|
+)
+OR
+<<3723001 |Arthritis (disorder)|
+OR
+<<400130008 |Temporal arteritis (disorder)|
+OR
+<<52661003 |Extra-articular rheumatoid process (disorder)|
+OR
+<<396230008 |Dermatomyositis (disorder)|
+OR
+<<31384009 |Polymyositis (disorder)|
+OR
+<<65323003 |Polymyalgia rheumatica (disorder)|
+OR
+<<276657008 |Overlap syndrome (disorder)|

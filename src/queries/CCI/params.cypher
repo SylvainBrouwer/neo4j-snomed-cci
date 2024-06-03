@@ -20,7 +20,30 @@
 //***********************************
 //**2: Peripheral vascular disease **
 //***********************************
-//TODO
+//id of BodyStructure - "Varix"
+:param varix_id => 12856003;
+//id of BodyStructure - "Hemorrhage"
+:param hemorrhage_id => 50960005;
+//id of BodyStructure - "Structure of carotid and/or cerebral and/or subclavian artery"
+:param carotis_id => 299717005;
+//id of BodyStructure - "Vascular structure of head and/or neck"
+:param vasc_headneck_id => 281232002;
+//id of BodyStructure - "Aortic structure"
+:param aorta_id => 15825003;
+//id of BodyStructure - "Structure of blood vessel of thoracic cross-sectional segment of trunk"
+:param vasc_thorax_id => 846601002;
+//id of ClinicalFinding - "Disorder of blood vessel"
+:param vasc_disorder_id => 27550009;
+//id of ClinicalFinding - "Intermittent claudication"
+:param claudicatio_id => 63491006;
+//id of BodyStructure - "Regional blood vessel"
+:param rbv_id => 306954006;
+//id of BodyStructure - "Peripheral vascular system"
+:param peripheral_vasc_id => 51833009;
+//id of QualifierValue - "Surgical repair"
+:param repair_id => 257903006;
+//id of Procedure - "Percutaneous transluminal angioplasty"
+:param pta_id => 5431005;
 
 
 //******************************
@@ -166,4 +189,22 @@
 //**************************
 //**17: Rheumatic disease **
 //**************************
-//TODO
+//id of ClinicalFinding - "Auto-immune disease"
+:param auto_id => 85828009;
+//id of BodyStructure - "Connective tissue structure"
+:param ctissue_id => 21793004;
+//id of ClinicalFinding - "Systemic lupus erythematosus"
+:param lupus_id => 55464009;
+//id of ClinicalFinding - "Arthritis (disorder)"
+:param arthritis_id => 3723001;
+//id of ClinicalFinding - "Arteriitis temporalis"
+:param arttemp_id => 400130008;
+//id of ClinicalFinding - "Extra articular rheumatoid processes"
+:param earp_id => 52661003;
+//ids of myositis
+:param myo_ids => [396230008, 31384009];
+//id of ClinicalFinding - "Polymyalgia Rheumatica"
+:param polymy_id => 65323003;
+//id of ClinicalFinding - "Overlap syndrome"
+:param overlap_id => 276657008;
+
